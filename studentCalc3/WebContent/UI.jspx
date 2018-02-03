@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	<jsp:directive.page contentType="text/html; charset=UTF-8" 
+		pageEncoding="UTF-8" session="true"/>
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+		
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>OSAP Calculator</title>
+	<link rel="StyleSheet" href="res/mc.css" type="text/css"
+title="cse4413" media="screen, print"/>
+</head>
+<body>
+<form action='' method='post'>
+<legend> Student Loan Application</legend>
+ <fieldset>
+   <table>
+   <tr>
+     <td> <label for="principle">Principal<div>(total loan amount after studies)</div></label> </td>
+     <td> <input name="principle" id="principle" type="number" value="25500"/></td>
+   </tr>
+   <tr>
+     <td> <label for="interest">Annual Interest Rate:</label> </td>
+     <td> <input name="interest" id="interest" type="number" value="6"/></td>
+   </tr>
+   <tr>
+     <td> <label for="pPeriod">Payment period<div>(total number of months)</div></label> </td>
+     <td> <input name="pPeriod" id="pPeriod" type="number" value="48"/></td>
+   </tr>
+   <tr>
+     <td> <label for="gPeriod">Grace Period<div>(take advantage of 6 month grace period and include and include grace period interest with your loan balance)</div></label> </td>
+     <td> <input name="gPeriod" id="gPeriod" type="checkbox" value="checkbox"/></td>
+   </tr>
+   <tr> 
+    <td>
+    <button type='submit' name='calculate' value='true' id='calculate' > Submit</button>
+    </td>
+   </tr>
+   </table>
+ </fieldset>
+</form>
+</body>
+</html>
+</jsp:root>

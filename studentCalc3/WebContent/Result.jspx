@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	<jsp:directive.page contentType="text/html; charset=ISO-8859-1" 
+		pageEncoding="ISO-8859-1" session="false"/>
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Result page</title>
+	<link rel="StyleSheet" href="res/mc.css" type="text/css"
+title="cse4413" media="screen, print"/>
+</head>
+<body>
+<form action='Start' value='post'>
+<fieldset>
+	<legend> Student Loan Application</legend>
+   <table>
+   <tr>
+     <td> <label for="gracePeriodInterest">Grace Period Interest:<div>(total loan amount after studies)</div></label> </td>
+     <td> $${requestScope['interest']}</td>
+   </tr>
+   <tr>
+     <td> <label for="monthlyPayments">Monthyl Payments:</label> </td>
+     <td> $${requestScope['principle']}</td>
+   </tr>
+   <tr>
+    <td><button type='submit' name='restart' value='true' id='restart' > Restart</button></td>
+   </tr>
+   </table>
+ </fieldset>
+ </form>
+</body>
+</html>
+</jsp:root>
